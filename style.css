@@ -1,0 +1,85 @@
+/*--UNIVERSAL--*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+:root {
+  --mainFont:'Roboto Mono', monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Syne Mono', monospace;
+}
+
+.body {
+  border-left: 1px honeydew dotted;
+  margin: 10px;
+  grid-area: body;
+  align-items: baseline;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+.wrapper {
+ background-color: cadetblue; 
+ display: grid;
+ grid-template-areas:"header header header" "sidebar body body " "gallery gallery gallery" "footer footer footer";
+  align-items: baseline;
+}
+/*--HEADER--*/
+header {
+  font-family: 'Roboto Mono', monospace;
+  color: honeydew;
+  text-transform: uppercase;
+  text-decoration: underline;
+  grid-area: header;
+  margin-bottom: 10px;
+}
+
+/*--BODY--*/
+h3 {
+  font-family: var(--mainFont);
+}
+
+.header {
+  justify-self: center;
+}
+/*--SIDEBAR--*/
+
+.sidebar {
+  grid-area: sidebar;
+
+}
+/*--PHOTO GALLERY--*/
+.gallery {
+  grid-area: gallery;
+  margin: 0 auto;
+  } 
+  .gallery img {
+    object-fit: contain;
+  }
+
+/*--FOOTER--*/
+footer, header {
+  background-color: deeppink;
+  text-align: center;
+}
+footer li {
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+footer button {
+  border: none;
+  font-family: 'Sono Mono', monospace;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 10px;
+}
+
+footer .signUp {
+  margin-top: 10px;
+}
